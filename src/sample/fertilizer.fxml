@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Fertilizer">
+    <columnConstraints>
+        <ColumnConstraints />
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <AnchorPane prefHeight="500.0" prefWidth="700.0">
+            <children>
+                <Label contentDisplay="CENTER" layoutX="151.0" layoutY="43.0" text="Рохрахунок мінеральних добрив" textAlignment="CENTER">
+                    <font>
+                        <Font name="Bernard MT Condensed" size="27.0" />
+                    </font>
+                </Label>
+            <Label layoutX="44.0" layoutY="100.0" text="Рекомендована норма ">
+               <font>
+                  <Font name="Bernard MT Condensed" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Onum1" layoutX="401.0" layoutY="97.0" promptText="кг/га" />
+            <Label layoutX="44.0" layoutY="133.0" text="Процентний вміст елемента живлення">
+               <font>
+                  <Font name="Bernard MT Condensed" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Onum2" layoutX="401.0" layoutY="131.0" promptText="\%" />
+            <TextField fx:id="Rezu1" layoutX="158.0" layoutY="178.0" promptText="кг" />
+            <Button fx:id="Rozrahmd" layoutX="44.0" layoutY="175.0" mnemonicParsing="false" onAction="#fertilizer1" text="Визначити">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Label contentDisplay="CENTER" layoutX="122.0" layoutY="233.0" text="Норми витрат на одну тону продукції" textAlignment="CENTER">
+               <font>
+                  <Font name="Bernard MT Condensed" size="27.0" />
+               </font>
+            </Label>
+            <Label layoutX="39.0" layoutY="283.0" text="Норма на одну тону">
+               <font>
+                  <Font name="Bernard MT Condensed" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="39.0" layoutY="319.0" text="Планована врожайність">
+               <font>
+                  <Font name="Bernard MT Condensed" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="39.0" layoutY="355.0" text="Коефіцієнт родючості грунту">
+               <font>
+                  <Font name="Bernard MT Condensed" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="n1t" layoutX="401.0" layoutY="291.0" promptText="кг" />
+            <TextField fx:id="pv" layoutX="401.0" layoutY="327.0" promptText="т/га" />
+            <TextField fx:id="krg" layoutX="401.0" layoutY="363.0" />
+            <Button fx:id="rnv" layoutX="44.0" layoutY="420.0" mnemonicParsing="false" onAction="#fertilizer2" text="Визначити">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <TextField fx:id="Rezu2" layoutX="162.0" layoutY="423.0" promptText="кг/га" />
+                <Button fx:id="tomenu2" layoutX="570.0" layoutY="417.0" mnemonicParsing="false" onAction="#initialize" prefHeight="53.0" prefWidth="110.0" text="Повернутись">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Button>
+            <Button layoutX="440.0" layoutY="417.0" mnemonicParsing="false" onAction="#delet" prefHeight="53.0" prefWidth="110.0" text="Очистити">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            </children>
+        </AnchorPane>
+    </children>
+</GridPane>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="500.0" prefWidth="700.0">
+         <children>
+            <Label contentDisplay="CENTER" layoutX="197.0" layoutY="75.0" text="Вибрати один з варіантів" textAlignment="CENTER">
+               <font>
+                  <Font name="Bernard MT Condensed" size="27.0" />
+               </font>
+            </Label>
+            <Button fx:id="togrn" layoutX="277.0" layoutY="164.0" mnemonicParsing="false" text="Норми висіву">
+               <font>
+                  <Font name="Californian FB" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="tofrt" layoutX="276.0" layoutY="259.0" mnemonicParsing="false" text="Норми добрив">
+               <font>
+                  <Font name="Californian FB" size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Grain">
+    <columnConstraints>
+        <ColumnConstraints />
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <AnchorPane prefHeight="500.0" prefWidth="700.0">
+            <children>
+                <Label contentDisplay="CENTER" layoutX="111.0" layoutY="48.0" text="Рохрахунок кількість насіння для висіву" textAlignment="CENTER">
+                    <font>
+                        <Font name="Bernard MT Condensed" size="27.0" />
+                    </font>
+                </Label>
+            <Label contentDisplay="CENTER" layoutX="277.0" layoutY="95.0" text="Вибрати культуру" textAlignment="CENTER">
+               <font>
+                  <Font name="Bernard MT Condensed" size="18.0" />
+               </font>
+            </Label>
+            <CheckBox fx:id="Cbp" layoutX="65.0" layoutY="152.0" mnemonicParsing="false" text="Пшениця">
+               <font>
+                  <Font name="Bernard MT Condensed" size="15.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="Cbg" layoutX="203.0" layoutY="152.0" mnemonicParsing="false" text="Жито">
+               <font>
+                  <Font name="Bernard MT Condensed" size="15.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="Cbi" layoutX="313.0" layoutY="152.0" mnemonicParsing="false" text="Ячмінь">
+               <font>
+                  <Font name="Bernard MT Condensed" size="15.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="Cbo" layoutX="434.0" layoutY="152.0" mnemonicParsing="false" text="Овес">
+               <font>
+                  <Font name="Bernard MT Condensed" size="15.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="Cbr" layoutX="539.0" layoutY="152.0" mnemonicParsing="false" text="Рапс">
+               <font>
+                  <Font name="Bernard MT Condensed" size="15.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="Cbk" layoutX="62.0" layoutY="196.0" mnemonicParsing="false" text="Кукурудза">
+               <font>
+                  <Font name="Bernard MT Condensed" size="15.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="Cgh" layoutX="202.0" layoutY="196.0" mnemonicParsing="false" text="Горох">
+               <font>
+                  <Font name="Bernard MT Condensed" size="15.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="Cbgre" layoutX="317.0" layoutY="196.0" mnemonicParsing="false" text="Гречка">
+               <font>
+                  <Font name="Bernard MT Condensed" size="15.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="Cbm" layoutX="542.0" layoutY="196.0" mnemonicParsing="false" text="Мак">
+               <font>
+                  <Font name="Bernard MT Condensed" size="15.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="Cbl" layoutX="434.0" layoutY="196.0" mnemonicParsing="false" text="Льон">
+               <font>
+                  <Font name="Bernard MT Condensed" size="15.0" />
+               </font>
+            </CheckBox>
+            <Label contentDisplay="CENTER" layoutX="62.0" layoutY="259.0" text="Густота рослин" textAlignment="CENTER">
+               <font>
+                  <Font name="Bernard MT Condensed" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Gr" layoutX="391.0" layoutY="258.0" promptText="шт/га" />
+            <Label contentDisplay="CENTER" layoutX="62.0" layoutY="303.0" text="Посівна придатність насіння" textAlignment="CENTER">
+               <font>
+                  <Font name="Bernard MT Condensed" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Ppn" layoutX="391.0" layoutY="302.0" promptText="\%" />
+            <TextField fx:id="Rezu3" layoutX="203.0" layoutY="354.0" promptText="кг/га" />
+            <Button layoutX="62.0" layoutY="351.0" mnemonicParsing="false" onAction="#grain" text="Визначити">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="tomenu1" layoutX="570.0" layoutY="417.0" mnemonicParsing="false" onAction="#initialize" prefHeight="53.0" prefWidth="110.0" text="Повернутись">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="438.0" layoutY="417.0" mnemonicParsing="false" onAction="#delet" prefHeight="53.0" prefWidth="110.0" text="Очистити">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            </children>
+        </AnchorPane>
+    </children>
+</GridPane>
